@@ -11,6 +11,6 @@
     "plaintext": "html",
     "typescript": "javascript",
     "typescriptreact": "javascript"
-  }
+  },
+  "json.schemaDownload.enable": false
 }
-

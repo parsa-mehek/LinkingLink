@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import path from 'node:path';
+// vite.config.ts
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'path'
 
-// Added alias support so imports like "components/XYZ" resolve properly.
 export default defineConfig({
   plugins: [react()],
   resolve: {
@@ -13,8 +13,5 @@ export default defineConfig({
       lib: path.resolve(__dirname, 'src/lib'),
       types: path.resolve(__dirname, 'src/types')
     }
-  },
-  build: {
-    outDir: 'dist'
   }
-});
+})
